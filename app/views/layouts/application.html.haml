@@ -1,0 +1,24 @@
+!!! 5
+%html
+  %head
+    %title Jokes
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %header.main
+      .title Jokes
+      .tagline
+        as told by
+        = link_to "@sillylogger", "https://twitter.com/sillylogger"
+        ,
+        = link_to "@flngn", "https://twitter.com/flngn"
+        and
+        = link_to "@hungryzi", "https://twitter.com/hungryzi"
+
+    %section.main
+      = yield
+
+    %footer.main
+      .credit
+        built with friendship, laughter and booze.

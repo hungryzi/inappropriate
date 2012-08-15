@@ -1,0 +1,6 @@
+%section
+  %ul
+    - @jokes.each do |joke|
+      %li
+        = link_to joke.id, joke_path(joke)
+

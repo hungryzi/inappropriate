@@ -1,0 +1,115 @@
+// require_self
+
+$black: #15101D
+$blue: #1F9DE0
+$green: #0ECFCF
+$white: #FFFFF0
+$yellow: #FFDD19
+
+$smaller: 0.8em
+$small: 0.9em
+$normal: 1.2em
+$bigger: 1.8em
+$giant: 10em
+
+@font-face
+  font-family: 'dirt2_soulstalkerregular'
+  src: font-url('assets/fonts/dirt2_soulstalker-webfont.eot')
+  src: font-url('dirt2_soulstalker-webfont.eot?#iefix') format('embedded-opentype'), font-url('dirt2_soulstalker-webfont.woff') format('woff'), font-url('dirt2_soulstalker-webfont.ttf') format('truetype'), font-url('dirt2_soulstalker-webfont.svg#dirt2_soulstalkerregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'kaiserzeitgotischregular'
+  src: font-url('kaisg___-webfont.eot')
+  src: font-url('kaisg___-webfont.eot?#iefix') format('embedded-opentype'), font-url('kaisg___-webfont.woff') format('woff'), font-url('kaisg___-webfont.ttf') format('truetype'), font-url('kaisg___-webfont.svg#kaiserzeitgotischregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+body
+  font-family: Georgia
+  font-size: $small
+  color: $white
+  background: image-url('bg_noise.png') repeat
+
+a
+  color: $blue
+
+  &:visited
+    color: $blue
+
+.black
+  background-color: $black
+.blue
+  background-color: $blue
+.green
+  background-color: $green
+.white
+  background-color: $white
+.yellow
+  background-color: $yellow
+
+.fineprint
+  font-size: $smaller
+  font-style: italic
+  font-weight: lighter
+
+header.main
+  text-align: center
+  margin: 40px 0
+
+  .title
+    font-family: 'dirt2_soulstalkerregular'
+    font-size: $giant
+    margin: -30px auto
+
+  .tagline
+    @extend .fineprint
+
+section.main
+  font-size: $normal
+  min-width: 400px
+  max-width: 600px
+  min-height: 300px
+  margin: 0 auto
+
+  header
+    position: relative
+    margin-top: 30px
+
+    .number
+      width: 60px
+      height: 60px
+      border-radius: 35px
+      text-shadow: 2px 2px 4px $black
+      box-shadow: 0px 3px 6px $black
+      border: 5px solid $white
+      position: absolute
+      bottom: -10px
+      left: -30px
+      text-align: center
+      vertical-align: middle
+
+      span
+        font-size: $bigger
+        line-height: 60px
+        font-family: 'kaiserzeitgotischregular'
+
+
+    .strip
+      height: 10px
+      box-shadow: 3px 3px 1px $black
+
+  section
+    padding: 10px
+
+    .content
+
+    .credit
+      text-align: right
+      @extend .fineprint
+
+footer.main
+  text-align: center
+  margin: 20px 0
+  @extend .fineprint

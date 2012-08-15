@@ -56,6 +56,8 @@ module Inappropriate
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
+
     config.generators do |g|
       g.template_engine :haml
     end
