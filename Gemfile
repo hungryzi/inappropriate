@@ -11,6 +11,8 @@ gem 'json'
 gem 'haml-rails'
 gem 'hpricot'
 
+gem 'omniauth-twitter'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
