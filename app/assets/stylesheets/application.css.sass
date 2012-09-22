@@ -1,4 +1,7 @@
-// require_self
+//= require_self
+
+@import 'bourbon'
+@import 'reset'
 
 $black: #15101D
 $blue: #1F9DE0
@@ -64,11 +67,11 @@ form
   input,
   button,
   textarea
-    border-radius: 4px
+    @include border-radius(4px)
     border: 1px solid $black
     outline: 0
     padding: 10px
-    box-sizing: border-box
+    @include box-sizing(border-box)
 
   input[type=text],
   textarea
@@ -93,7 +96,7 @@ header.main
   .title
     font-family: 'dirt2_soulstalkerregular'
     font-size: $giant
-    margin: -30px auto
+    margin: -30px auto -15px
 
   .tagline
     @extend .fineprint
@@ -112,9 +115,9 @@ section.main
     .number
       width: 60px
       height: 60px
-      border-radius: 35px
+      @include border-radius(35px)
       text-shadow: 2px 2px 4px $black
-      box-shadow: 0px 3px 6px $black
+      @include box-shadow(0px 3px 6px $black)
       border: 5px solid $white
       position: absolute
       bottom: -10px
@@ -130,7 +133,7 @@ section.main
 
     .strip
       height: 10px
-      box-shadow: 3px 3px 1px $black
+      @include box-shadow(3px 3px 1px $black)
 
   section
     padding: 10px

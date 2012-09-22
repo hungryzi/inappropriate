@@ -12,6 +12,7 @@ gem 'haml-rails'
 gem 'hpricot'
 
 gem 'omniauth-twitter'
+gem 'bourbon'
 
 group :development, :test do
   gem 'rspec-rails'
