@@ -7,6 +7,8 @@ gem 'rails'
 
 gem 'pg'
 
+gem 'activeadmin'
+
 gem 'json'
 gem 'haml-rails'
 gem 'hpricot'

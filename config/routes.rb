@@ -1,4 +1,6 @@
 Inappropriate::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -12,7 +14,6 @@ Inappropriate::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :jokes, :only => [:index, :show, :create, :new]
 
   match '/auth/:provider/callback' => 'sessions#create'
   match '/signout' => 'sessions#destroy', :as => :signout
