@@ -57,6 +57,10 @@ a
   font-style: italic
   font-weight: lighter
 
+.white_link
+  color: $white
+  text-decoration: none
+
 form
   fieldset
     border: none
@@ -94,12 +98,14 @@ header.main
   margin: 40px 0
 
   .title
-    font-family: 'dirt2_soulstalkerregular'
-    font-size: $giant
-    margin: -30px auto -15px
+    a
+      @extend .white_link
+      font-family: 'dirt2_soulstalkerregular'
+      font-size: $giant
 
   .tagline
     @extend .fineprint
+    margin-top: -10px
 
 section.main
   font-size: $normal
@@ -113,6 +119,7 @@ section.main
     margin-top: 30px
 
     .number
+      @extend .white_link
       width: 60px
       height: 60px
       @include border-radius(35px)

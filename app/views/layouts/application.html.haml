@@ -7,14 +7,15 @@
     = csrf_meta_tags
   %body
     %header.main
-      .title Jokes
+      .title
+        = link_to 'Jokes', root_path
       .tagline
         as told by
-        = link_to "@sillylogger", "https://twitter.com/sillylogger"
+        = link_to '@sillylogger', "https://twitter.com/sillylogger"
         ,
-        = link_to "@flngn", "https://twitter.com/flngn"
+        = link_to '@flngn', "https://twitter.com/flngn"
         and
-        = link_to "@hungryzi", "https://twitter.com/hungryzi"
+        = link_to '@hungryzi', "https://twitter.com/hungryzi"
 
     %section.main
       = yield
